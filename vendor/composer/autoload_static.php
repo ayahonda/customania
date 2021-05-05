@@ -330,6 +330,7 @@ class ComposerStaticInit646338d486bcebd0bd3b73cba34d99bd
         array (
             0 => __DIR__ . '/..' . '/laravel/ui/src',
         ),
+
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',

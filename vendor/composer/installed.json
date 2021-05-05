@@ -1006,6 +1006,7 @@
         ]
     },
     {
+
         "name": "laravel/ui",
         "version": "v1.2.0",
         "version_normalized": "1.2.0.0",
@@ -1062,6 +1063,7 @@
         ]
     },
     {
+
         "name": "league/commonmark",
         "version": "1.5.8",
         "version_normalized": "1.5.8.0",
