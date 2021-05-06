@@ -1,0 +1,1 @@
+<div class="copyright text-center">©️CUSTOMANIA 2021</div>
