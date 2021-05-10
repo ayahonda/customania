@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// ログインしている人のみがアクセスできるルーティンググループ
+
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('/post', 'PostController@create')->name('create');
+    
+    Route::post('/post/store', 'PostController@store')->name('store');
+
+});
