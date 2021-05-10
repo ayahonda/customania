@@ -73,9 +73,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="main container">
             @yield('content')
         </main>
+        <footer class="footer">
+            <small class="copyright text-center">©️CUSTOMANIA 2021</small>
+        </footer>
     </div>
 </body>
 </html>
