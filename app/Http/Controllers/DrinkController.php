@@ -9,7 +9,9 @@ class DrinkController extends Controller
 {
     public function index()
     {
-        return view('top');
+        $drinks = Drink::orderBy('created_at', 'DESC')->get();
+
+        return view('top', compact('drinks'));
     }
 
     public function create()
