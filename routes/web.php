@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('top');
-});
+Route::get('/', 'DrinkController@index')->name('index');
 
 Auth::routes();
 
@@ -23,8 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
 
-    Route::get('/post', 'PostController@create')->name('create');
+    Route::get('/post', 'DrinkController@create')->name('create');
     
-    Route::post('/post/store', 'PostController@store')->name('store');
+    Route::post('/post/store', 'DrinkController@store')->name('store');
 
 });
