@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Drink;
+use App\User;
+
 
 class DrinkController extends Controller
 {
     public function index()
     {
         $drinks = Drink::orderBy('created_at', 'DESC')->get();
-
         return view('top', compact('drinks'));
     }
 
