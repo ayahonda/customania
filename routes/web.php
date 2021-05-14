@@ -11,10 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('top');
-});
+Route::get('/', 'DrinkController@index')->name('index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// ログインしている人のみがアクセスできるルーティンググループ
+
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('/post', 'DrinkController@create')->name('create');
+    
+    Route::post('/post/store', 'DrinkController@store')->name('store');
+
+});
