@@ -18,7 +18,7 @@
               </div>
               <div class="form-group">
                 <label>カスタマイズ内容</label>
-                <textarea class='description form-control' name='customize' placeholder='カスタマイズ内容を入力'></textarea>
+                <textarea class='customize form-control' name='customize' placeholder='カスタマイズ内容を入力'></textarea>
               </div>
               <div class="form-group">
                 <label>価格</label>
