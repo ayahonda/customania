@@ -26,6 +26,14 @@ class DrinkController extends Controller
         $drink = new Drink;
         $form = $request->all();
         
+        $validatedData = $request->validate([
+            'shop' => 'required|max:255',
+            'drink' => 'required|max:255',
+            'customize' => 'required',
+            'price' => 'required|integer',
+            'image' => 'mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
         $data = ['user_id' => \Auth::id(), 'shop' => $form['shop'], 'drink' => $form['drink'], 'customize' => $form['customize'], 'price' => $form['price']];
         
         $drink->create($data);
