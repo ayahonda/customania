@@ -3,6 +3,7 @@
 
 @section('content')
 <h1 class='pagetitle'>ドリンク投稿ページ</h1>
+
 <div class="row justify-content-center container">
     <div class="col-md-10">
       <form method='POST' action="{{ route('store') }}" enctype="multipart/form-data">
@@ -12,6 +13,7 @@
               <div class="form-group">
                 <label>ショップ名</label>
                 <input type='text' class='form-control' name='shop' placeholder='ショップ名を入力'>
+                </div>
               <div class="form-group">
                 <label>ドリンク名</label>
                 <input type='text' class='form-control' name='drink' placeholder='ドリンク名を入力'>
