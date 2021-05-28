@@ -25,6 +25,7 @@ class DrinkController extends Controller
 
         $drink = new Drink;
         $form = $request->all();
+        
         $data = ['user_id' => \Auth::id(), 'shop' => $form['shop'], 'drink' => $form['drink'], 'customize' => $form['customize'], 'price' => $form['price']];
         
         $drink->create($data);
