@@ -8,7 +8,13 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
+
+                @if(!empty($drink->image))
+                    <div class='image-wrapper'><img class='drink-image img-fluid' src="{{ asset('storage/images/'.$drink->image) }}"></div>
+                @else
                     <div class='image-wrapper'><img class='drink-image img-fluid' src="{{ asset('images/drink-latte.jpg') }}" ></div>
+                @endif
+
                     <p class='shop'>{{ $drink->shop }}</p>
                     <h3 class='h3 book-title'>{{ $drink->drink }}</h3>
                     <p class='customize'>{{ $drink->customize }}</p>
