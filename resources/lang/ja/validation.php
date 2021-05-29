@@ -1,5 +1,11 @@
 <?php  // resources/lang/ja/validation.php
+<<<<<<< Updated upstream
 return [
+=======
+
+return [
+
+>>>>>>> Stashed changes
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -10,6 +16,10 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     'accepted'             => ':attributeを承認してください。',
     'active_url'           => ':attributeは正しいURLではありません。',
     'after'                => ':attributeは:date以降の日付にしてください。',
@@ -71,6 +81,10 @@ return [
     'timezone'             => ':attributeは正しいタイムゾーンをしていしてください。',
     'unique'               => ':attributeは既に存在します。',
     'url'                  => ':attributeを正しい書式にしてください。',
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
@@ -81,11 +95,19 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
     ],
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
@@ -103,4 +125,8 @@ return [
       'price' => '価格',
       'image' => '画像'
     ],
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
 ];
