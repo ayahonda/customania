@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h3 class="my-4 text-center">Enjoy Drink with CUSTOMIZE !</h3>
+    <h3 class="my-4 text-center">Enjoy Drink with CUSTOMIZE !!</h3>
     <div class="row justify-content-center">
     @foreach($drinks as $drink)
         <div class="col-md-4">

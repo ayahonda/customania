@@ -77,7 +77,14 @@
         </nav>
 
         <main class="main container">
-            @yield('content')
+          <!-- フラッシュメッセージ -->
+          @if (session('flash_message'))
+            <div class="flash_message bg-success text-center py-3 my-0 mb30">
+                {{ session('flash_message') }}
+            </div>
+            @endif
+
+        @yield('content')
         </main>
         <footer class="footer">
             <small class="copyright text-center">©️CUSTOMANIA 2021</small>
