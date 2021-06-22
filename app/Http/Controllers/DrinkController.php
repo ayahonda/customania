@@ -25,11 +25,6 @@ class DrinkController extends Controller
 
         $drink = new Drink;
         $form = $request->all();
-<<<<<<< Updated upstream
-        
-=======
-
->>>>>>> Stashed changes
         $validatedData = $request->validate([
             'shop' => 'required|max:255',
             'drink' => 'required|max:255',
@@ -38,9 +33,9 @@ class DrinkController extends Controller
             'image' => 'mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-<<<<<<< Updated upstream
+
         $data = ['user_id' => \Auth::id(), 'shop' => $form['shop'], 'drink' => $form['drink'], 'customize' => $form['customize'], 'price' => $form['price']];
-=======
+
         if ($request->hasFile('image')) {
             
             $request->file('image')->store('/public/images');
@@ -64,7 +59,7 @@ class DrinkController extends Controller
             ];
 
         }
->>>>>>> Stashed changes
+
         
         $drink->create($data);
 
